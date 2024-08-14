@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Code
+title: Workshops
 slug: code
-description: A category for code related posts.
+description: A category for workshop related posts.
 ---
