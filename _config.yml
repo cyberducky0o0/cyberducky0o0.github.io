@@ -1,8 +1,7 @@
 # Site Settings
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
+name: CyberDucky
+title: CyberDucky | My CyberVerse
+description: A location where I'll go through anything related to Cyber Security!
 tags:
   - blog
   - template
@@ -19,22 +18,24 @@ menu:
     url: /contact
   - title: Feed
     url: /feed.xml
-email: youremail@test.com
+  - title: All Links
+    url: /links
+email: cyberducky0x@gmail.com
 # See: https://disqus.com/
-disqus_username: disqus_username
+disqus_username: cyberducky
 # Contact Form Setting
 # See: https://formspree.io/
-formspree_form_id: formspree_form_id
+formspree_form_id: xzbwaggj
 
 
 # Social Media Settings
 # Remove the item if you don't need it
-github_username: github_username
-facebook_username: facebook_username
-twitter_username: twitter_username
-instagram_username: instagram_username
-linkedin_username: linkedin_username
-medium_username: medium_username
+github_username: cyberducky0o0
+twitter_username: Cyber_Ducky_
+instagram_username: cyber_ducky_
+linkedin_username: juan-s-6b241b173
+medium_username: cyberducky
+youtube_username: UClPrJCdhyQYsQNc7AlhW-Eg
 
 
 # Posts Settings
@@ -47,7 +48,7 @@ two_columns_layout: true
 # Advanced Settings
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
-google_analytics: "UA-XXXXXXXX-X"
+google_analytics: "G-E601LYPV9Z"
 language: "en"
 categories_folder: category
 sent_message_url: "/contact/message-sent/"
@@ -110,4 +111,4 @@ exclude: [
 ]
 
 # Theme
-version: v3.1.2
+version: Quack
