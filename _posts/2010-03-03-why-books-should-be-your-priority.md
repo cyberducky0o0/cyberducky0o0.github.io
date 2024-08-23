@@ -29,11 +29,11 @@ Ever wondered how you can truly stay anonymous online ? I will be going over the
 
 4. Make a fake AI generated profile picture 
 
-5. Make numerous accounts for social media, LinkedIn, Facebook, instagram
+5. Make numerous accounts for social media, LinkedIn, Facebook, Instagram
 
 6. This can be taken a step further and a family is created for this person
 
-7. How choosing a random address can point to this fake person in PeopleSearch 
+7. How choosing a random address can point to this fake person in People Search 
 
 8. A voicemail can be added and a fake voice can be used 
 
@@ -44,6 +44,18 @@ Ever wondered how you can truly stay anonymous online ? I will be going over the
 
 
 ##  Create an anonymous email
+
+
+
+https://proton.me/tor
+
+m﻿ake an email that has e2e encryption, 
+
+has a tor site for anonymous access,
+
+ does not log ip, even if it tried, it would be the wrong one in tor, 
+
+d﻿ata privacy laws  prevent the govt from requesting your emails in switzerland
 
 
 
@@ -69,7 +81,7 @@ Ever wondered how you can truly stay anonymous online ? I will be going over the
 
 
 
-## Make numerous accounts for social media, LinkedIn, Facebook, instagram
+## Make numerous accounts for social media, LinkedIn, Facebook, Instagram
 
 
 
@@ -85,7 +97,7 @@ Ever wondered how you can truly stay anonymous online ? I will be going over the
 
 
 
-## How choosing a random address can point to this fake person in PeopleSearch 
+## How choosing a random address can point to this fake person in People Search 
 
 
 
