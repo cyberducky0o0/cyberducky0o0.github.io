@@ -6,7 +6,7 @@ subtitle: Stay Anonymous at all times online!
 description: The Ultimate Guide for Staying Anonymous
 image: /assets/img/uploads/classy-glassy-3-.png
 optimized_image: ""
-category: "{{slug}}"
+category: code
 tags:
   - workshop
   - osint
