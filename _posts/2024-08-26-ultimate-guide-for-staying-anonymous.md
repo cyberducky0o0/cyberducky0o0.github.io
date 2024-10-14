@@ -63,13 +63,12 @@ We will demonstrate each of these topics briefly, and answer  any questions ind
    4c. How is Protonmail Different than Other email
 
    4d. What are Temp Emails
-5. #### Receive Amazon packages to an anonymous address
+5. #### Receive packages to an anonymous address
 
    5a. Order your favorite shopping item online!  
 
    5b. Receive it without living somewhere
 
-   5c. Order Prepaid Mobile Credits
 6. #### Make a fake AI generated profile picture
 
    6a. Learn where to find AI Generated Pictures  
