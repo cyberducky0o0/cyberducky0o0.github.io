@@ -7,7 +7,7 @@ description: CyberDucky Creation description.
 permalink: /about/
 ---
 
-<img class="img-rounded" src="/assets/img/uploads/me.png" alt="Juan Soberanes" width="200">
+<img class="img-rounded" src="/assets/img/me2.jpeg" alt="Juan Soberanes" height=500 width="500">
 
 # About
 
