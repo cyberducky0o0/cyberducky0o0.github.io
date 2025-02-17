@@ -37,14 +37,12 @@ We will demonstrate each of these topics briefly, and answer  any questions ind
 #### Source Code Mining
 
 1. GitHub repository analysis  
-
-   1a. Static Application Security Testing (SAST)
-
-   2a. Dynamic Application Security Testing (DAST) 
-2.  Advanced search operators
-3.  Finding hard coded credentials
-4.  Commit history analysis
-5.  Issue tracking examination
+2. Static Application Security Testing (SAST)
+3. Dynamic Application Security Testing (DAST) 
+4.  Advanced search operators
+5.  Finding hard coded credentials
+6.  Commit history analysis
+7.  Issue tracking examination
 
 ####  Documentation Analysis
 
