@@ -7,18 +7,18 @@ category: "{{slug}}"
 author: CyberDucky
 paginate: false
 ---
-## Reconnaissance
+# Reconnaissance
 
 
 
-## P﻿ort Scanning:
+### P﻿ort Scanning:
 
 * N﻿MAP
 * Rustscan (Def faster than NMAP)
 
 
 
-F﻿inding Subdomains and Directory Bruteforcing:
+### F﻿inding Subdomains and Directory Bruteforcing:
 
 * s﻿ubdir 
 * f﻿fuf (Good for directory brueforcing and subdomain finding)
