@@ -4,6 +4,9 @@ layout: minimal
 
 {% assign date_format = site.date_format | default: "%m/%d/%Y" %}
 
+<!-- AdSense Banner Ad -->
+{% include adsense-banner.html %}
+
 <div class="tags">
   {% assign tags_list = site.tags %}
     {% if tags_list.first[0] == null %}
@@ -36,3 +39,6 @@ layout: minimal
       {% assign group = nil %}
   </ul>
 {% endfor %}
+
+<!-- AdSense Content Ad -->
+{% include adsense-content.html %}

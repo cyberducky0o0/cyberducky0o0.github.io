@@ -7,6 +7,10 @@
         <section class="content">
             <main class="home" id="post" role="main">
                 <h1 class="title-category">/{{page.title}}</h1>
+
+                <!-- AdSense Banner Ad -->
+                {% include adsense-banner.html %}
+
                 <div id="grid" class="row flex-grid">
                     {% assign posts = site.posts | where_exp:"post","post.is_generated != true" %}
                     {% for post in posts %}
@@ -61,6 +65,9 @@
                         {% endif %}
                     {% endfor %}
                 </div>
+
+                <!-- AdSense Content Ad -->
+                {% include adsense-content.html %}
             </main>
         </section>
         {% include footer.html %}
