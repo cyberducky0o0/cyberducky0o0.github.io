@@ -1,10 +1,10 @@
 ---
 layout: page
-menu: false
-date: '2022-10-22 01:53:59'
+menu: true
+date: 2022-10-22 01:53:59
 title: About
-description: CyberDucky Creation description.
 permalink: /about/
+description: CyberDucky Creation description.
 ---
 
 <img class="img-rounded" src="/assets/img/me2.jpeg" alt="Juan Soberanes" height=500 width="500">
