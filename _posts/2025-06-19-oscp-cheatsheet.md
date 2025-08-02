@@ -5,7 +5,7 @@ title: OSCP Cheatsheet
 description: I will be adding more to this as I go on my Journey
 image: /assets/img/uploads/oscp-700x700-321861135.png
 optimized_image: /assets/img/uploads/oscp-700x700-321861135.png
-category: "{{slug}}"
+category: tutorial
 tags:
   - oscp
   - hacking
