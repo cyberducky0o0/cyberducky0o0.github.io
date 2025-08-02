@@ -1,14 +1,15 @@
 formspree_form_id: formspree_form_id
 name: CyberDucky
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
+title: Cyber Security Research
+description: Cyber Security Research, in the form of videos, articles, and
+  anything you can think of!
 tags:
   - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
+  - cybersecurity
+  - cyberducky
+  - hacking
+  - cyber
+  - research
 show_hero: true
 menu:
   - title: Home
