@@ -1,5 +1,6 @@
 ---
 layout: category
 title: Security Research
-slug: "{{slug}}"
+slug: research
+description: Security Research
 ---
