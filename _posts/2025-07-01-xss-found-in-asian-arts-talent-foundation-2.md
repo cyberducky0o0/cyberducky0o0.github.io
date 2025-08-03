@@ -5,7 +5,7 @@ title: XSS Found in Asian Arts Talent Foundation
 description: XSS Vulnerability Found in OSS
 image: /assets/img/uploads/20250626_0723_cyberducky-s-hack-adventure_remix_01jyp9s1snernbzybyvg427ck9.png
 optimized_image: /assets/img/uploads/20250626_0723_cyberducky-s-hack-adventure_remix_01jyp9s1snernbzybyvg427ck9.png
-category: tutorial
+category: research
 tags:
   - security
   - research
