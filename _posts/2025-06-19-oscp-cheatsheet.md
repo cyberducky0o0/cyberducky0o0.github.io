@@ -322,13 +322,28 @@ powershell
 * You need to find traces of the `.git` files on the target machine.
 * Now navigate to the directory where the file is located, a potential repository.
 
-
-
 # Reconnaissance
 
 ### P﻿ort Scanning:
 
-* N﻿MAP
+* N﻿MAP\
+  M﻿ost used commands:
+
+  ```
+  #use -Pn option if you're getting nothing in the scan
+  nmap -sC -sV <IP> -v #Basic scan
+  nmap -T4 -A -p- <IP> -v #complete scan
+  sudo nmap -sV -p 443 --script "vuln" 192.168.50.124 #running vuln category scripts
+
+  #NSE
+  updatedb
+  locate .nse | grep <name>
+  sudo nmap --script="name" <IP> #here we can specify other options like specific ports...etc
+
+  Test-NetConnection -Port <port> <IP>   #powershell utility
+
+  1..1024 | % {echo ((New-Object Net.Sockets.TcpClient).Connect("IP", $_)) "TCP port $_ is open"} 2>$null #automating port scan of first 1024 ports in powershell
+  ```
 * Rustscan (Def faster than NMAP)
 
 ### F﻿inding Subdomains and Directory Bruteforcing:
@@ -339,6 +354,6 @@ powershell
 
 I﻿f you are given an IP address but you find a DNS name, then you can modify your /etc/hosts files to point to the DNS name. If there is a subdomain found, add another entry in /etc/hosts file so that you can access it via your browser.
 
-
-
 - - -
+
+S﻿MB Share Finding:
