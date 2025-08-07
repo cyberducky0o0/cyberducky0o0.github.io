@@ -396,15 +396,9 @@ put <file> #to upload file
 get <file> #to download file
 ```
 
-
-
-
-
 - - -
 
-# Username and Password Wordlists 
-
-
+# Username and Password Wordlists
 
 ## Username Wordlists
 
@@ -446,3 +440,17 @@ get <file> #to download file
 3. **Time-box online brute**
 
    * Limit to ~5–10 minutes per service to avoid lockouts. ([Reddit](https://www.reddit.com/r/oscp/comments/1apxuuf/best_oscp_wordlists/?utm_source=chatgpt.com "Best OSCP wordlists : r/oscp"))
+
+
+
+- - -
+
+# Windows SID Enumeration (Users)
+
+
+
+```
+impacket-lookupsid 'cicada.htb/guest'@cicada.htb -no-pass | grep 'SidTypeUser' |
+sed 's/.*\\\(.*\) (SidTypeUser)/\1/' > users.txt
+
+```
