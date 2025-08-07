@@ -359,10 +359,6 @@ I﻿f you are given an IP address but you find a DNS name, then you can modify y
 ### **S﻿MB Share Finding:**
 
 ```
-
-
-
-
 sudo nbtscan -r 192.168.50.0/24 #IP or range can be provided
 
 \#NSE scripts can be used
@@ -399,3 +395,54 @@ smbmap -H <target_ip> -u <username> -p <password> -r <share_name>
 put <file> #to upload file
 get <file> #to download file
 ```
+
+
+
+
+
+- - -
+
+# Username and Password Wordlists 
+
+
+
+## Username Wordlists
+
+* **`SecLists/Discovery/Usernames/top-usernames-shortlist.txt`**\
+  ~5,500 of the most common usernames for web-login and SSH/FTP brute-forcing. ([GitHub](https://github.com/danielmiessler/SecLists?utm_source=chatgpt.com "danielmiessler/SecLists"), [therealunicornsecurity.github.io](https://therealunicornsecurity.github.io/OSCP/ "OSCP tips and tricks – Unicorn Security – Breaching Unicorns"))
+* **`SecLists/Discovery/Usernames/cirt-default-usernames.txt`**\
+  ~2,500 default service accounts (e.g. FTP, MySQL, etc.). ([GitHub](https://github.com/danielmiessler/SecLists?utm_source=chatgpt.com "danielmiessler/SecLists"), [therealunicornsecurity.github.io](https://therealunicornsecurity.github.io/OSCP/ "OSCP tips and tricks – Unicorn Security – Breaching Unicorns"))
+* **Username Anarchy** (tool: `urbanadventurer/username-anarchy`)\
+  Generate permutations (first.last, f_last, initials, etc.) from known names or email addresses. ([Medium](https://medium.com/%40jakemcgreevy/creating-custom-username-and-password-lists-on-the-fly-2740abd8f366?utm_source=chatgpt.com "Creating custom username and password lists on the fly!"))
+* **Custom (CeWL-driven)**\
+  Spider the target’s web assets to grab organization-specific words—great for intranet or bespoke apps. ([Medium](https://medium.com/%40tony-fu/penetration-testing-password-cracking-part2-generate-wordlist-fbc4b1844a64?utm_source=chatgpt.com "Password Cracking Part2 — Generate wordlist | by Tony Fu ..."))
+
+## Password Wordlists
+
+* **`/usr/share/wordlists/rockyou.txt`**\
+  The go-to 1.7 M entry list on Kali—ideal for online brute-forcing against web forms or SSH. ([Reddit](https://www.reddit.com/r/oscp/comments/1apxuuf/best_oscp_wordlists/?utm_source=chatgpt.com "Best OSCP wordlists : r/oscp"), [therealunicornsecurity.github.io](https://therealunicornsecurity.github.io/OSCP/ "OSCP tips and tricks – Unicorn Security – Breaching Unicorns"))
+* **`SecLists/Passwords/Leaked-Databases/10_million_password_list_top_1000000.txt`**\
+  Real-world top 1 million passwords drawn from breaches. ([GitHub](https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/10-million-password-list-top-10000.txt?utm_source=chatgpt.com "10-million-password-list-top-10000.txt"))
+* **`SecLists/Passwords/Common-Credentials/10k-most-common.txt`**\
+  Curated “quick-win” top 10 000 list—start here for speed. ([GitHub](https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/10k-most-common.txt?fbclid=IwAR0Eyfvtc3c2q-6_d7c002K3ojJv-8j89WEuJ9acelpMV6D26U5cxPQ3N7k&utm_source=chatgpt.com "SecLists/Passwords/Common-Credentials/10k-most- ..."))
+* **`SecLists/Passwords/Common-Credentials/default-passwords.txt`**\
+  Default creds for routers, databases, web-apps (e.g. admin:admin, root:toor). ([GitHub](https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/10k-most-common.txt?fbclid=IwAR0Eyfvtc3c2q-6_d7c002K3ojJv-8j89WEuJ9acelpMV6D26U5cxPQ3N7k&utm_source=chatgpt.com "SecLists/Passwords/Common-Credentials/10k-most- ..."))
+* **CUPP (Common User Passwords Profiler)**\
+  OSINT-based tool to build wordlists from personal data (pets, birthdays, etc.). ([Medium](https://medium.com/%40jakemcgreevy/creating-custom-username-and-password-lists-on-the-fly-2740abd8f366?utm_source=chatgpt.com "Creating custom username and password lists on the fly!"))
+* **Custom (CeWL)**\
+  Spider up to a set depth on the target host to extract unique terms for your wordlist. ([Medium](https://medium.com/%40tony-fu/penetration-testing-password-cracking-part2-generate-wordlist-fbc4b1844a64?utm_source=chatgpt.com "Password Cracking Part2 — Generate wordlist | by Tony Fu ..."))
+* **Rule-based mutations**\
+  Use Hashcat/John rule sets (e.g. d3adgood, rockyou-lek) to add l33t, case shifts, suffixes/pre-fixes.
+
+## Quick Usage Tips
+
+1. **Layer your attacks**
+
+   * Start with small lists (top 10 k users + passwords) for 1–2 minutes.
+   * If nothing cracks, move to rockyou, then the 1 M list. ([Reddit](https://www.reddit.com/r/oscp/comments/1apxuuf/best_oscp_wordlists/?utm_source=chatgpt.com "Best OSCP wordlists : r/oscp"))
+2. **Default creds first**
+
+   * Always try `admin:admin`, `root:toor`, `username:username`, and service:service. ([GitHub](https://github.com/saisathvik1/OSCP-Cheatsheet?utm_source=chatgpt.com "OSCP Cheatsheet by Sai Sathvik"))
+3. **Time-box online brute**
+
+   * Limit to ~5–10 minutes per service to avoid lockouts. ([Reddit](https://www.reddit.com/r/oscp/comments/1apxuuf/best_oscp_wordlists/?utm_source=chatgpt.com "Best OSCP wordlists : r/oscp"))
