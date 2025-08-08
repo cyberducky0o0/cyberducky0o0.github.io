@@ -458,9 +458,7 @@ sed 's/.*\\\(.*\) (SidTypeUser)/\1/' > users.txt
 crackmapexec smb cicada.htb -u users.txt -p ''
 ```
 
-## \
-\
-E﻿numerating Domain Users (Using SMB)
+## E﻿numerating Domain Users (Using SMB)
 
 ```
 crackmapexec smb <hostname/ipaddress> -u <username> -p '' --
