@@ -539,4 +539,8 @@ users\
 
 8﻿. Find out privielges
 
-9﻿.  Exfil Registry hives, sam and
+9﻿.  Exfil Registry hives, sam and system to local machine
+
+1﻿0. Using these two hives, try to crack the hash with Impacket-secretsdump
+
+1﻿1. If you can not crack the hash, we only need to pass the administrator hash and perform a pass the hash attack with evil-winrm.
