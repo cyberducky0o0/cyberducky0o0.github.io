@@ -2,7 +2,7 @@
 date: 2025-08-20 19:16:18
 layout: post
 title: Stored XSS FOUND! In Many Notes, The Best Note Taking APP!
-description: "Blind SQL Injection Found! In Tirreno : Security Analytics"
+description: Stored XSS FOUND! In Many Notes, The Best Note Taking APP!
 image: /assets/img/uploads/capture.png
 optimized_image: /assets/img/uploads/capture.png
 category: research
