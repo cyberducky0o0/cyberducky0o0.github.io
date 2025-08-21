@@ -54,7 +54,6 @@ if (options.content) {
         markedService.parse(options.content),
     );
 }
-
 ```
 
 The problem is that DOMPurify doesn’t catch everything. It’s good at blocking obvious stuff, but more creative payloads (SVG tricks, DOM clobbering, mutation XSS) can still get through.
@@ -67,7 +66,6 @@ The simplest test payload worked right away:
 
 ```
 <script>alert("Cyber Ducky was Here")</script>
-
 ```
 
 Open the file in the browser, and sure enough, the alert popped.
@@ -107,3 +105,8 @@ If I were patching this, here’s what I’d do right away:
 ## Closing Thoughts
 
 This was a straightforward find, but it highlights a bigger point: relying solely on client-side libraries like DOMPurify isn’t enough. XSS is sneaky, and even well-known tools can miss certain payloads.
+
+
+
+T﻿hank You Bruno at Many Notes for getting this patched ASAP! \
+H﻿ere is the GitHub Credit given: https://github.com/brufdev/many-notes/releases/tag/v0.10.2
