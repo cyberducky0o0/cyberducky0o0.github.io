@@ -3,8 +3,8 @@ date: 2025-09-19 08:00:04
 layout: post
 title: Mining Github for CVEs!
 description: Mining Github for CVEs!
-image: /assets/img/uploads/2.png
-optimized_image: /assets/img/uploads/2.png
+image: /assets/img/uploads/20250422_2118_digital-ducky-matrix_remix_01jsgdv110f8j86zy1h7spk6vp.png
+optimized_image: /assets/img/uploads/20250422_2118_digital-ducky-matrix_remix_01jsgdv110f8j86zy1h7spk6vp.png
 category: code
 tags:
   - security
